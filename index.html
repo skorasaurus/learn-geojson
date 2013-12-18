@@ -34,7 +34,7 @@
 		}).addTo(map);
 
 		// add our goejson data
-		$.getJSON("geojson/cleveland_Bars.js", function(data) {
+		$.getJSON("geojson/bars.js", function(data) {
 			var geojson = L.geoJson(data, {
 				onEachFeature: function (feature, layer) {
 					layer.bindPopup(feature.properties.Name); // add the Name property from the geojson to the popup

@@ -28,8 +28,8 @@
 		// create a map in the "map" div, set the view to a given place and zoom
 		var map = L.map('map').setView([41.45, -81.70], 13);
 								
-		// add an OpenStreetMap tile layer
-		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		// add an OpenStreetMap tile layer https://www.mapbox.com/v3/skorasaurus.gj65410n/15/8948/12229.png
+		L.tileLayer('https://a.tiles.mapbox.com/v3/skorasaurus.gj65410n/{z}/{x}/{y}.png', {
 		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		}).addTo(map);
 
@@ -38,6 +38,7 @@ var barStyle = {
     'color': '#000',
     'weight': 5,
     'opacity': 0.6
+    
 };
 		// add our goejson data
 		L.geoJson(bars, {
